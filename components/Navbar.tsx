@@ -23,34 +23,6 @@ import * as m from "@/paraglide/messages";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { ModeToggle } from "./ModeToggle";
 
-interface RouteProps {
-  href: string;
-  label: string;
-}
-
-const routeList: RouteProps[] = [
-  {
-    href: m.concepthref(),
-    label: m.Concept(),
-  },
-  {
-    href: m.keyinformationhref(),
-    label: m.Key_information(),
-  },
-  {
-    href: m.participantshref(),
-    label: m.Participants(),
-  },
-  {
-    href: m.partnershref(),
-    label: m.Partners(),
-  },
-  {
-    href: m.galleryhref(),
-    label: m.Gallery(),
-  },
-];
-
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
@@ -93,16 +65,41 @@ export const Navbar = () => {
                   <SheetTitle className="text-xl font-bold">Medical</SheetTitle>
                 </SheetHeader>
                 <nav className="mt-4 flex flex-col items-center justify-center gap-2">
-                  {routeList.map(({ href, label }: RouteProps) => (
-                    <Link
-                      key={label}
-                      href={"/#" + href}
-                      onClick={() => setIsOpen(false)}
-                      className={buttonVariants({ variant: "ghost" })}
-                    >
-                      {label}
-                    </Link>
-                  ))}
+                  <Link
+                    href={m.concepthref()}
+                    onClick={() => setIsOpen(false)}
+                    className={buttonVariants({ variant: "ghost" })}
+                  >
+                    {m.Concept()}
+                  </Link>
+                  <Link
+                    href={m.keyinformationhref()}
+                    onClick={() => setIsOpen(false)}
+                    className={buttonVariants({ variant: "ghost" })}
+                  >
+                    {m.Key_information()}
+                  </Link>
+                  <Link
+                    href={m.participantshref()}
+                    onClick={() => setIsOpen(false)}
+                    className={buttonVariants({ variant: "ghost" })}
+                  >
+                    {m.Participants()}
+                  </Link>
+                  <Link
+                    href={m.partnershref()}
+                    onClick={() => setIsOpen(false)}
+                    className={buttonVariants({ variant: "ghost" })}
+                  >
+                    {m.Partners()}
+                  </Link>
+                  <Link
+                    href={m.galleryhref()}
+                    onClick={() => setIsOpen(false)}
+                    className={buttonVariants({ variant: "ghost" })}
+                  >
+                    {m.Gallery()}
+                  </Link>
                   <Link
                     href="/contact"
                     onClick={() => setIsOpen(false)}
@@ -126,17 +123,51 @@ export const Navbar = () => {
 
           {/* desktop */}
           <nav className="hidden gap-2 lg:flex">
-            {routeList.map((route: RouteProps, i) => (
-              <Link
-                href={"/#" + route.href}
-                key={i}
-                className={`text-[17px] ${buttonVariants({
-                  variant: "ghost",
-                })}`}
-              >
-                {route.label}
-              </Link>
-            ))}
+            <Link
+              href={m.concepthref()}
+              onClick={() => setIsOpen(false)}
+              className={`text-[17px] ${buttonVariants({
+                variant: "ghost",
+              })}`}
+            >
+              {m.Concept()}
+            </Link>
+            <Link
+              href={m.keyinformationhref()}
+              onClick={() => setIsOpen(false)}
+              className={`text-[17px] ${buttonVariants({
+                variant: "ghost",
+              })}`}
+            >
+              {m.Key_information()}
+            </Link>
+            <Link
+              href={m.participantshref()}
+              onClick={() => setIsOpen(false)}
+              className={`text-[17px] ${buttonVariants({
+                variant: "ghost",
+              })}`}
+            >
+              {m.Participants()}
+            </Link>
+            <Link
+              href={m.partnershref()}
+              onClick={() => setIsOpen(false)}
+              className={`text-[17px] ${buttonVariants({
+                variant: "ghost",
+              })}`}
+            >
+              {m.Partners()}
+            </Link>
+            <Link
+              href={m.galleryhref()}
+              onClick={() => setIsOpen(false)}
+              className={`text-[17px] ${buttonVariants({
+                variant: "ghost",
+              })}`}
+            >
+              {m.Gallery()}
+            </Link>
           </nav>
 
           <div className="hidden gap-2 lg:flex">
