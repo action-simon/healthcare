@@ -41,7 +41,7 @@ export const Navbar = () => {
         <NavigationMenuList className="container flex h-20 w-screen justify-between px-4 ">
           <NavigationMenuItem className="flex font-bold">
             <Link href="/" className="ml-2 flex text-xl font-bold">
-              Medical
+              {m.home_metadata_title()}
             </Link>
           </NavigationMenuItem>
 

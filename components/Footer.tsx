@@ -20,7 +20,7 @@ export const Footer = () => {
               href="/"
               className="flex text-xl font-bold" /*onClick={goToTop}*/
             >
-              Medical
+              {m.home_metadata_title()}
             </Link>
             <div>
               Mühlenmathe 22
