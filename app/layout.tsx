@@ -37,7 +37,7 @@ export default function RootLayout({
           >
             <Toaster />
             <Navbar />
-            <div className="p-8">{children}</div>
+            <div className="p-8 bg-background">{children}</div>
 
             <Footer />
             <ScrollToTop />

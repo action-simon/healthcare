@@ -58,45 +58,6 @@ export const Footer = () => {
           </div>
 
           <div className="flex flex-col gap-2">
-            <h3 className="text-lg font-bold">{m.About()}</h3>
-            <div>
-              <Link
-                href={"/#" + m.services()}
-                className="opacity-60 hover:opacity-100"
-              >
-                {m.Services()}
-              </Link>
-            </div>
-
-            <div>
-              <Link
-                href={"/#" + m.faq()}
-                className="opacity-60 hover:opacity-100"
-              >
-                {m.FAQ()}
-              </Link>
-            </div>
-
-            <div>
-              <Link
-                href={"/#" + m.howItWorks()}
-                className="opacity-60 hover:opacity-100"
-              >
-                {m.How_it_works()}
-              </Link>
-            </div>
-
-            <div>
-              <Link
-                href={"/#" + m.pricing()}
-                className="opacity-60 hover:opacity-100"
-              >
-                {m.Social_Media_Pricing()}
-              </Link>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-2">
             <h3 className="text-lg font-bold">{m.Legal()}</h3>
             <div>
               <Link href="/imprint" className="opacity-60 hover:opacity-100">
@@ -129,7 +90,7 @@ export const Footer = () => {
               //reloadDocument
               className="border-primary text-primary transition-all hover:border-b-2"
             >
-              Zeinab Consulting {m.Agency()}
+              {m.home_metadata_title()}
             </Link>
           </h3>
         </section>

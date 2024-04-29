@@ -122,7 +122,7 @@ export const Navbar = () => {
           </nav>
 
           {/* desktop */}
-          <nav className="hidden gap-2 lg:flex">
+          <nav className="hidden gap-2 lg:flex ">
             <Link
               href={m.concepthref()}
               onClick={() => setIsOpen(false)}
