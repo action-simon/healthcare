@@ -50,7 +50,7 @@
   "home_headline_sub": "As a true business fair focused on professionals, our goal is to encourage direct \"face-to-face\" meetings between top decision-makers and exhibitors through pre-organized and highly qualified business meetings prior to the event.",
   "home_list_head": "Health measures",
   "homelist_1": "Mask recommended",
-  "homelist_2": "Hand sanitization",
+  "homelist_2": "Disinfect hands",
   "homelist_3": "1 meter distance",
   "homelist_4": "No handshakes",
   "home_text_1": "Healthcare Meetings targets professionals seeking concrete support proposals for projects aimed at improving patient reception, the work of healthcare providers, or managers.",
@@ -58,7 +58,7 @@
   "home_text_3_heading": "Dear professionals,",
   "home_text_3": "We are Alina Khudyakova, Defne Kirtas, Tyra Smeitink, Aysenur Demirel, Enriko Pharsenadze, and Zeynep Celik. We are a project group called MindsUnited, currently participating in the Smart Solutions Semester project at Saxion University of Applied Sciences. Our interdisciplinary team consists of International Business and Nursing students. We are currently working on a project to raise awareness for the effective implementation of Advanced Care Planning for professionals working with dementia patients in the IJssel-Vecht region. We are part of the project in collaboration with the Windesheim University of Applied Sciences in Zwolle. We are working together with various clients and disciplines to emphasize the importance of Advanced Care Planning.",
   "home_text_4": "In the period from November to December, we are planning to hold a KICK-OFF meeting with various professionals, where the appropriate form of Advanced Care Planning will be presented. The exact content of this meeting is still to be determined. As a project group, we would like to generate interest in this event, as it will have great value for professionals.",
-  "home_text_5": "What is proactive care planning? Advanced Care Planning involves making decisions about future medical care in the event that an individual is unable to communicate their preferences. It includes discussing preferences, values, and goals regarding medical treatments and documenting them in legal documents such as living wills or medical powers of attorney. This ensures that the received care aligns with the patient's personal preferences, even if they are unable to make decisions themselves. In this process, professionals collaborate to achieve the best care outcomes within this palliative phase for this target group.",
+  "home_text_5": "Advanced Care Planning involves making decisions about future medical care in the event that an individual is unable to communicate their preferences. It includes discussing preferences, values, and goals regarding medical treatments and documenting them in legal documents such as living wills or medical powers of attorney. This ensures that the received care aligns with the patient's personal preferences, even if they are unable to make decisions themselves. In this process, professionals collaborate to achieve the best care outcomes within this palliative phase for this target group.",
   "Read_more": "Read more",
   "Advanced_healthcare": "Advanced healthcare",
   "Advanced_medical_care": "Advanced medical care",
@@ -96,5 +96,10 @@
   "home_text_8": "Carers, people with dementia, family members and researchers are working together to design a way of working in which carers use conversation aids to discuss wishes and needs in a timely way, and record and share the results with all carers involved. We are investigating the benefits and costs of this way of working.",
   "home_text_9_heading": "Goal",
   "home_text_9": "With our project, we are enabling healthcare providers in the IJssel-Vecht region to use proactive care planning earlier, more often and more methodically. And to do so in a more transmurally coordinated way about proactive care planning discussions and their outcomes. As a result, care and support will better meet the wishes and needs of people with dementia and their families throughout the dementia care process, from diagnosis to death.",
-  "home_text_10": "This project was funded by our Palliance programme. This is our commitment to ensuring a good quality of life for terminally ill people and their families. This means receiving care and support that meets their wishes and needs. For people with dementia, this can sometimes be particularly challenging. That is why we are investing in research and methods to work with and support this target group in discussing their wishes and needs."
+  "home_text_10": "This project was funded by our Palliance programme. This is our commitment to ensuring a good quality of life for terminally ill people and their families. This means receiving care and support that meets their wishes and needs. For people with dementia, this can sometimes be particularly challenging. That is why we are investing in research and methods to work with and support this target group in discussing their wishes and needs.",
+  "home_text_5_heading": "What is proactive care planning?",
+  "homelist_1_sub": "To protect yourself, it is recommended to wear a mask",
+  "homelist_2_sub": "Disinfect hands before contact with objects or people",
+  "homelist_3_sub": "It is advised to keep a distance of one meter",
+  "homelist_4_sub": "Please avoid shaking hands with people"
 }

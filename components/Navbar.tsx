@@ -40,7 +40,7 @@ export const Navbar = () => {
       <NavigationMenu className="mx-auto">
         <NavigationMenuList className="container flex h-20 w-screen justify-between px-4 ">
           <NavigationMenuItem className="flex font-bold">
-            <Link href="/" className="ml-2 flex text-xl font-bold">
+            <Link href="/" className="ml-2 flex text-xl font-bold text-primary">
               {m.home_metadata_title()}
             </Link>
           </NavigationMenuItem>
