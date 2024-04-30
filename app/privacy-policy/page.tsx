@@ -8,9 +8,10 @@ export default function PrivacyPolicy() {
           {m.Privacy_Policy()}
         </h1>
         <div className="mb-8 text-foreground">
-          <p className="text-xl font-bold">Zeinab Consulting {m.Agency()}</p>
+          <p className="text-xl font-bold"> {m.home_metadata_title()}</p>
 
           <p>
+            Zeynep Celik <br />
             Mühlenmathe 22 <br />
             48599 Gronau
             <br />

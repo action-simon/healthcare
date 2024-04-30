@@ -1,6 +1,6 @@
 "use client";
 
-import { Menu, MessageCircle } from "lucide-react";
+import { HeartPulseIcon, Menu, MessageCircle } from "lucide-react";
 import { useEffect, useState } from "react";
 
 import { Button, buttonVariants } from "@/components/ui/button";
@@ -36,11 +36,18 @@ export const Navbar = () => {
   }
 
   return (
-    <header className="sticky top-0 z-40 w-full overflow-x-hidden border-b-[1px] border-muted bg-background">
+    <header
+      className="sticky top-0 z-40 w-full overflow-x-hidden border-b-[1px] border-muted
+        bg-background"
+    >
       <NavigationMenu className="mx-auto">
         <NavigationMenuList className="container flex h-20 w-screen justify-between px-4 ">
           <NavigationMenuItem className="flex font-bold">
-            <Link href="/" className="ml-2 flex text-xl font-bold text-primary">
+            <Link
+              href="/"
+              className="ml-2 flex items-center text-xl font-bold text-primary"
+            >
+              <HeartPulseIcon className="mr-2" />
               {m.home_metadata_title()}
             </Link>
           </NavigationMenuItem>
@@ -103,9 +110,7 @@ export const Navbar = () => {
                   <Link
                     href="/contact"
                     onClick={() => setIsOpen(false)}
-                    className={`border ${buttonVariants({
-                      variant: "secondary",
-                    })}`}
+                    className={`border ${buttonVariants({ variant: "secondary" })}`}
                   >
                     <MessageCircle className="mr-2 h-5 w-5" />
                     {m.Contact_us()}
@@ -126,45 +131,35 @@ export const Navbar = () => {
             <Link
               href={m.concepthref()}
               onClick={() => setIsOpen(false)}
-              className={`text-[17px] ${buttonVariants({
-                variant: "ghost",
-              })}`}
+              className={`text-[17px] ${buttonVariants({ variant: "ghost" })}`}
             >
               {m.Concept()}
             </Link>
             <Link
               href={m.keyinformationhref()}
               onClick={() => setIsOpen(false)}
-              className={`text-[17px] ${buttonVariants({
-                variant: "ghost",
-              })}`}
+              className={`text-[17px] ${buttonVariants({ variant: "ghost" })}`}
             >
               {m.Key_information()}
             </Link>
             <Link
               href={m.participantshref()}
               onClick={() => setIsOpen(false)}
-              className={`text-[17px] ${buttonVariants({
-                variant: "ghost",
-              })}`}
+              className={`text-[17px] ${buttonVariants({ variant: "ghost" })}`}
             >
               {m.Participants()}
             </Link>
             <Link
               href={m.partnershref()}
               onClick={() => setIsOpen(false)}
-              className={`text-[17px] ${buttonVariants({
-                variant: "ghost",
-              })}`}
+              className={`text-[17px] ${buttonVariants({ variant: "ghost" })}`}
             >
               {m.Partners()}
             </Link>
             <Link
               href={m.galleryhref()}
               onClick={() => setIsOpen(false)}
-              className={`text-[17px] ${buttonVariants({
-                variant: "ghost",
-              })}`}
+              className={`text-[17px] ${buttonVariants({ variant: "ghost" })}`}
             >
               {m.Gallery()}
             </Link>

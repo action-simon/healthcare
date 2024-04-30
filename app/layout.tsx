@@ -29,19 +29,19 @@ export default function RootLayout({
     <LanguageProvider>
       <html lang={languageTag()}>
         <body className={inter.className}>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <Toaster />
-            <Navbar />
-            <div className="bg-background">{children}</div>
-
-            <Footer />
-            <ScrollToTop />
-          </ThemeProvider>
+          <main className="flex min-h-screen flex-col">
+            <ThemeProvider
+              attribute="class"
+              defaultTheme="system"
+              enableSystem
+              disableTransitionOnChange
+            >
+              <Navbar />
+              <Toaster />
+              <div className="flex-1 bg-background">{children}</div> <Footer />
+              <ScrollToTop />
+            </ThemeProvider>
+          </main>
         </body>
       </html>
     </LanguageProvider>
