@@ -12,10 +12,19 @@ import * as m from "@/paraglide/messages";
 export default function Error404() {
   return (
     <div className="App">
-      <div className="flex min-h-screen place-items-center justify-center bg-[url('https://source.unsplash.com/random?nature')] bg-cover bg-center bg-no-repeat">
-        <Card className="mx-auto max-w-xs rounded bg-background/90 py-4 text-center shadow-md dark:bg-background/85">
+      <div
+        className="flex min-h-screen place-items-center justify-center
+          bg-[url('https://source.unsplash.com/random?nature')] bg-cover bg-center
+          bg-no-repeat"
+      >
+        <Card
+          className="mx-auto max-w-xs rounded bg-background/90 py-4 text-center shadow-md
+            dark:bg-background/85"
+        >
           <CardHeader>
-            <h1 className="text-5xl font-bold text-foreground">Error 404</h1>
+            <h1 className="text-5xl font-bold text-foreground">
+              {m.Error_404()}
+            </h1>
             <p className="mb-6 text-2xl font-medium text-foreground">
               {m.Sorry_Page_not_found()}
             </p>

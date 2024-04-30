@@ -29,7 +29,7 @@ export default function RootLayout({
     <LanguageProvider>
       <html lang={languageTag()}>
         <body className={inter.className}>
-          <main className="flex min-h-screen flex-col">
+          <main className="flex min-h-screen flex-col break-words">
             <ThemeProvider
               attribute="class"
               defaultTheme="system"

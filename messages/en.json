@@ -101,5 +101,6 @@
   "homelist_1_sub": "To protect yourself, it is recommended to wear a mask",
   "homelist_2_sub": "Disinfect hands before contact with objects or people",
   "homelist_3_sub": "It is advised to keep a distance of one meter",
-  "homelist_4_sub": "Please avoid shaking hands with people"
+  "homelist_4_sub": "Please avoid shaking hands with people",
+  "Error_404": "Error 404"
 }
