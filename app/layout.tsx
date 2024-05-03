@@ -28,20 +28,22 @@ export default function RootLayout({
   return (
     <LanguageProvider>
       <html lang={languageTag()}>
-        <body className={inter.className}>
-          <main className="flex min-h-screen flex-col break-words">
-            <ThemeProvider
-              attribute="class"
-              defaultTheme="system"
-              enableSystem
-              disableTransitionOnChange
-            >
-              <Navbar />
-              <Toaster />
-              <div className="flex-1 bg-background">{children}</div> <Footer />
-              <ScrollToTop />
-            </ThemeProvider>
-          </main>
+        <body
+          className={`${inter.className} "flex justify-center" min-h-screen w-full flex-col
+          items-center`}
+        >
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <Navbar />
+            <main className="w-full bg-background">{children}</main>
+            <Footer />
+            <ScrollToTop />
+            <Toaster />
+          </ThemeProvider>
         </body>
       </html>
     </LanguageProvider>

@@ -38,8 +38,8 @@
   "Enter_a_valid_email": "Geben Sie eine gültige E-Mail-Adresse ein.",
   "concepthref": "konzept",
   "Concept": "Konzept",
-  "keyinformationhref": "Schlüsselinformation",
-  "Key_information": "Schlüsselinformation",
+  "keyinformationhref": "informationen",
+  "Key_information": "Informationen",
   "participantshref": "teilnehmer",
   "Participants": "Teilnehmer",
   "partnershref": "partner",
@@ -102,5 +102,6 @@
   "homelist_2_sub": "Desinfizieren Sie Ihre Hände vor dem Kontakt mit Gegenständen oder Personen.",
   "homelist_3_sub": "Es wird empfohlen, einen Abstand von einem Meter einzuhalten",
   "homelist_4_sub": "Bitte vermeiden Sie das Händeschütteln",
-  "Error_404": "Fehler 404"
+  "Error_404": "Fehler 404",
+  "Agenda": "Unsere Agenda – was wir vorhaben"
 }

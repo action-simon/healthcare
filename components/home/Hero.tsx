@@ -1,25 +1,44 @@
+"use client";
+
 import Image from "next/image";
 
 import { Button } from "@/components/ui/button";
 import { Link } from "@/lib/i18n";
 import * as m from "@/paraglide/messages";
 import hero_image from "@/public/hero-img.png";
+import Container from "../Container";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="px-4 py-10 sm:py-16 md:px-8 lg:py-24">
-      <div className=" mx-auto max-w-7xl  ">
-        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
+    <section id="hero">
+      <Container>
+        <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
           <div>
-            <p className="text-base font-semibold uppercase tracking-wider text-blue-600">
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, ease: "easeInOut" }} // Add easing here
+              className="text-base font-semibold uppercase tracking-wider text-blue-600"
+            >
               {m.home_metadata_title()}
-            </p>
-            <h1 className="mt-4 text-xl font-bold text-foreground sm:text-2xl lg:mt-8 xl:text-4xl">
+            </motion.p>
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2, ease: "easeInOut" }} // Add easing here
+              className="mt-4 text-xl font-bold text-foreground sm:text-2xl lg:mt-8 xl:text-4xl"
+            >
               {m.home_headline()}
-            </h1>
-            <p className="mt-4 text-base text-muted-foreground sm:text-xl lg:mt-8">
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4, ease: "easeInOut" }} // Add easing here
+              className="mt-4 text-base text-muted-foreground sm:text-xl lg:mt-8"
+            >
               {m.home_headline_sub()}
-            </p>
+            </motion.p>
             <Link href="#">
               <Button
                 size={"lg"}
@@ -45,10 +64,16 @@ const Hero = () => {
           </div>
 
           <div>
-            <Image className="w-full" src={hero_image} alt="" />
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.6, ease: "easeInOut" }} // Add easing here
+            >
+              <Image className="w-full" src={hero_image} alt="" />
+            </motion.div>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 };

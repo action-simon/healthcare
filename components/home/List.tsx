@@ -2,22 +2,23 @@ import Image from "next/image";
 
 import * as m from "@/paraglide/messages";
 import dementia_image from "@/public/deniz-altindas-t1XLQvDqt_4-unsplash.jpg";
+import Container from "../Container";
 
 const List = () => {
   return (
-    <section className="bg-muted px-4 py-10 sm:py-16 md:px-8 lg:py-24">
-      <div className=" mx-auto max-w-7xl  ">
+    <section id="agenda" className="bg-muted ">
+      <Container>
+        <p className="mb-12 text-center text-3xl font-bold">{m.Agenda()}</p>
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
           <div className="w-full">
             <Image className=" rounded-3xl" src={dementia_image} alt="" />
           </div>
 
-          <div className="">
-            <p className="mb-12 text-base font-semibold uppercase tracking-wider text-primary">
-              {m.home_metadata_title()}
-            </p>
-
-            <ul className="list-outside list-decimal pl-6">
+          <div>
+            <ul
+              className="list-outside list-decimal rounded-3xl bg-background px-12 py-8 pl-14 font-light
+                shadow-md"
+            >
               <li>{m.Advanced_healthcare()}</li>
               <li>{m.Advanced_medical_care()}</li>
               <li>{m.Specialised_healthcare_professionals()}</li>
@@ -59,7 +60,7 @@ const List = () => {
             </ul>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 };
