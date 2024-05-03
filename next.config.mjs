@@ -1,11 +1,19 @@
-import { paraglide } from "@inlang/paraglide-next/plugin"
+import { paraglide } from "@inlang/paraglide-next/plugin";
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        hostname: "source.unsplash.com",
+      },
+    ],
+  },
+};
 
 export default paraglide({
-	paraglide: {
-		project: "./project.inlang",
-		outdir: "./paraglide"
-	},
-	...nextConfig
+  paraglide: {
+    project: "./project.inlang",
+    outdir: "./paraglide",
+  },
+  ...nextConfig,
 });
