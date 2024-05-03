@@ -1,8 +1,8 @@
-import Image from "next/image";
-
 import * as m from "@/paraglide/messages";
-import hands_image from "@/public/shane-rounce-DNkoNXQti3c-unsplash.jpg";
+
 import Container from "../Container";
+import Image from "next/image";
+import hands_image from "@/public/shane-rounce-DNkoNXQti3c-unsplash.jpg";
 
 const KeyInformation = () => {
   return (

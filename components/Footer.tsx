@@ -5,7 +5,7 @@ import Container from "./Container";
 
 export const Footer = () => {
   return (
-    <footer className="w-full bg-accent/80">
+    <footer className="bg-accent/80">
       <Container>
         <Link
           href="/"

@@ -1,4 +1,5 @@
 import * as m from "@/paraglide/messages";
+
 import Container from "../Container";
 
 const Info = () => {

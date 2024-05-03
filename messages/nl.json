@@ -35,7 +35,7 @@
   "Message": "Bericht",
   "We_are_happy_to_hear_from_you": "Wij horen graag van u.",
   "Send_your_message": "Verstuur uw bericht",
-  "Enter_a_valid_email": "Vul een geldig e-mailadres in.",
+  "Enter_a_valid_email": "Voer een geldig e-mailadres in.",
   "concepthref": "concept",
   "Concept": "Concept",
   "keyinformationhref": "kerninformatie",
@@ -103,5 +103,7 @@
   "homelist_3_sub": "Geadviseerd wordt om een afstand van één meter aan te houden",
   "homelist_4_sub": "Vermijd het schudden van handen met mensen",
   "Error_404": "Foutmelding 404",
-  "Agenda": "Onze agenda - wat we van plan zijn te doen"
+  "Agenda": "Onze agenda - wat we van plan zijn te doen",
+  "Please_enter_a_valid_name": "Vul alstublieft een geldige naam in.",
+  "Please_enter_between_3_and_1000_characters": "Voer tussen 3 en 1000 tekens in."
 }

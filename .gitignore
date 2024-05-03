@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 .yarn/install-state.gz
+.turbo
 
 # testing
 /coverage
@@ -12,6 +13,9 @@
 # next.js
 /.next/
 /out/
+
+# env
+.env*
 
 # production
 /build

@@ -1,5 +1,6 @@
-import Container from "@/components/Container";
 import * as m from "@/paraglide/messages";
+
+import Container from "@/components/Container";
 
 export default function PrivacyPolicy() {
   return (

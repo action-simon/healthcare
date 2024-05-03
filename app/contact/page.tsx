@@ -1,10 +1,7 @@
 "use client";
 
-import { Forward } from "lucide-react";
-import { useForm } from "react-hook-form";
-import { z } from "zod";
+import * as m from "@/paraglide/messages";
 
-import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
@@ -13,17 +10,32 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
+
+import { Button } from "@/components/ui/button";
+import Container from "@/components/Container";
+import { Forward } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { useToast } from "@/components/ui/use-toast";
-import * as m from "@/paraglide/messages";
 import emailjs from "@emailjs/browser";
+import { useForm } from "react-hook-form";
+import { useToast } from "@/components/ui/use-toast";
+import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 const FormSchema = z.object({
-  user_name: z.string().min(2).max(50),
+  user_name: z
+    .string({ errorMap: () => ({ message: m.Please_enter_a_valid_name() }) })
+    .min(2)
+    .max(50),
   user_email: z.string().email({ message: m.Enter_a_valid_email() }),
-  message: z.string().min(3).max(1000),
+  message: z
+    .string({
+      errorMap: () => ({
+        message: m.Please_enter_between_3_and_1000_characters(),
+      }),
+    })
+    .min(3)
+    .max(1000),
 });
 
 export default function Contact() {
@@ -45,9 +57,14 @@ export default function Contact() {
     };
 
     emailjs
-      .send("service_wbg8n02", "template_isrrrvs", templateParams, {
-        publicKey: "j0nvKjLyIwzykjWpc",
-      })
+      .send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        templateParams,
+        {
+          publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
+        },
+      )
       .then(() => {
         toast({
           title: m.Success(),
@@ -67,7 +84,7 @@ export default function Contact() {
 
   return (
     <section id="contact">
-      <div className="container py-24 sm:py-32">
+      <Container>
         <h3 className="text-center text-4xl font-bold md:text-5xl">
           {m.Contact_us()}
         </h3>
@@ -126,7 +143,7 @@ export default function Contact() {
                   <FormControl>
                     <Textarea
                       placeholder={m.We_are_happy_to_hear_from_you()}
-                      className="min-h-[100px]  bg-muted/50 dark:bg-muted/80"
+                      className="min-h-[100px] bg-muted/50 dark:bg-muted/80"
                       {...field}
                     />
                   </FormControl>
@@ -141,7 +158,7 @@ export default function Contact() {
             </Button>
           </form>
         </Form>
-      </div>
+      </Container>
     </section>
   );
 }

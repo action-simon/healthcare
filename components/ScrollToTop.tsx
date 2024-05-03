@@ -1,8 +1,8 @@
 "use client";
 
-import { ArrowUpToLine } from "lucide-react";
 import { useEffect, useState } from "react";
 
+import { ArrowUpToLine } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const ScrollToTop = () => {

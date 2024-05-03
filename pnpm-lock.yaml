@@ -15,8 +15,8 @@ importers:
         specifier: ^3.3.4
         version: 3.3.4(react-hook-form@7.51.3(react@18.3.1))
       '@inlang/paraglide-next':
-        specifier: 0.1.6
-        version: 0.1.6(next@14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+        specifier: 0.1.7
+        version: 0.1.7(next@14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-accordion':
         specifier: ^1.1.2
         version: 1.1.2(@types/react-dom@18.3.0)(@types/react@18.3.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -84,12 +84,12 @@ importers:
         specifier: ^1.0.7
         version: 1.0.7(tailwindcss@3.4.3)
       zod:
-        specifier: ^3.23.5
-        version: 3.23.5
+        specifier: ^3.23.6
+        version: 3.23.6
     devDependencies:
       '@inlang/paraglide-js':
-        specifier: 1.7.2
-        version: 1.7.2
+        specifier: 1.7.3
+        version: 1.7.3
       '@types/node':
         specifier: ^20
         version: 20.12.8
@@ -193,12 +193,12 @@ packages:
   '@inlang/detect-json-formatting@1.0.0':
     resolution: {integrity: sha512-o0jeI8U4TgNlsPwI0y92jld8/18Loh2KEgHCYCJ42rCOdxFrA8R60cydlEd2/6jkdHFn5DxKj8rOyiKv3z9uOw==}
 
-  '@inlang/paraglide-js@1.7.2':
-    resolution: {integrity: sha512-Ob/vm+KukQQcvEYXNjVBP3B0657Eh73A7urNt/BIPfXiPoxqSTrd5gjY3N8SnViEZfZnIGZ2pVEEGkUZLJCQJA==}
+  '@inlang/paraglide-js@1.7.3':
+    resolution: {integrity: sha512-VCBazYyPTY6VJT9PDp7CQGTgQGR3tP8++dB9b0GylNwUQMHGke4jHZ+//luEeBue8dsvuzKpRF9OxZS9FfK86g==}
     hasBin: true
 
-  '@inlang/paraglide-next@0.1.6':
-    resolution: {integrity: sha512-qZ2VnPysB9Vfa4GUGRLdkGhw84yzyG5sQgixNP5WcsSyLiU0Y28CKAKHouAhfftwyzzGTXYSTg8dAl4OaiEg7Q==}
+  '@inlang/paraglide-next@0.1.7':
+    resolution: {integrity: sha512-Nbj1bmIdtmOwvr5YgUUnIP5YKt9/GtxsCwlALUDC++3Tn99mJRhl21YHOxsHLCewrzZI/Qi6Mh0docNVCaVVxA==}
     hasBin: true
     peerDependencies:
       next: ^13.0.0 || ^14.0.0
@@ -2294,8 +2294,8 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
-  zod@3.23.5:
-    resolution: {integrity: sha512-fkwiq0VIQTksNNA131rDOsVJcns0pfVUjHzLrNBiF/O/Xxb5lQyEXkhZWcJ7npWsYlvs+h0jFWXXy4X46Em1JA==}
+  zod@3.23.6:
+    resolution: {integrity: sha512-RTHJlZhsRbuA8Hmp/iNL7jnfc4nZishjsanDAfEY1QpDQZCahUp3xDzl+zfweE9BklxMUcgBgS1b7Lvie/ZVwA==}
 
 snapshots:
 
@@ -2367,7 +2367,7 @@ snapshots:
     dependencies:
       guess-json-indent: 2.0.0
 
-  '@inlang/paraglide-js@1.7.2':
+  '@inlang/paraglide-js@1.7.3':
     dependencies:
       '@inlang/detect-json-formatting': 1.0.0
       commander: 11.1.0
@@ -2379,9 +2379,9 @@ snapshots:
       - babel-plugin-macros
       - debug
 
-  '@inlang/paraglide-next@0.1.6(next@14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)':
+  '@inlang/paraglide-next@0.1.7(next@14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@inlang/paraglide-js': 1.7.2
+      '@inlang/paraglide-js': 1.7.3
       commander: 12.0.0
       consola: 3.2.3
       next: 14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -4641,4 +4641,4 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  zod@3.23.5: {}
+  zod@3.23.6: {}

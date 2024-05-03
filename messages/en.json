@@ -35,7 +35,7 @@
   "Message": "Message",
   "We_are_happy_to_hear_from_you": "We are happy to hear from you.",
   "Send_your_message": "Send your message",
-  "Enter_a_valid_email": "Enter a valid email.",
+  "Enter_a_valid_email": "Please enter a valid email.",
   "concepthref": "concept",
   "Concept": "Concept",
   "keyinformationhref": "key-information",
@@ -103,5 +103,7 @@
   "homelist_3_sub": "It is advised to keep a distance of one meter",
   "homelist_4_sub": "Please avoid shaking hands with people",
   "Error_404": "Error 404",
-  "Agenda": "Our agenda - what we are planning to do"
+  "Agenda": "Our agenda - what we are planning to do",
+  "Please_enter_a_valid_name": "Please enter a valid name.",
+  "Please_enter_between_3_and_1000_characters": "Please enter between 3 and 1000 characters."
 }

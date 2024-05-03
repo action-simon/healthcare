@@ -1,15 +1,15 @@
 import "./globals.css";
 
-import { Inter } from "next/font/google";
+import * as m from "@/paraglide/messages.js";
 
 import { Footer } from "@/components/Footer";
+import { Inter } from "next/font/google";
+import { LanguageProvider } from "@inlang/paraglide-next";
 import { Navbar } from "@/components/Navbar";
+import { ScrollToTop } from "@/components/ScrollToTop";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Toaster } from "@/components/ui/toaster";
-import * as m from "@/paraglide/messages.js";
 import { languageTag } from "@/paraglide/runtime.js";
-import { LanguageProvider } from "@inlang/paraglide-next";
-import { ScrollToTop } from "@/components/ScrollToTop";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,8 +29,7 @@ export default function RootLayout({
     <LanguageProvider>
       <html lang={languageTag()}>
         <body
-          className={`${inter.className} "flex justify-center" min-h-screen w-full flex-col
-          items-center`}
+          className={`${inter.className} flex min-h-screen flex-col bg-background text-foreground`}
         >
           <ThemeProvider
             attribute="class"
@@ -39,10 +38,10 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             <Navbar />
-            <main className="w-full bg-background">{children}</main>
-            <Footer />
+            <main className="flex-1">{children}</main>
             <ScrollToTop />
             <Toaster />
+            <Footer />
           </ThemeProvider>
         </body>
       </html>

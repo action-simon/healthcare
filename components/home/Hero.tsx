@@ -1,12 +1,12 @@
 "use client";
 
-import Image from "next/image";
+import * as m from "@/paraglide/messages";
 
 import { Button } from "@/components/ui/button";
-import { Link } from "@/lib/i18n";
-import * as m from "@/paraglide/messages";
-import hero_image from "@/public/hero-img.png";
 import Container from "../Container";
+import Image from "next/image";
+import { Link } from "@/lib/i18n";
+import hero_image from "@/public/hero-img.png";
 import { motion } from "framer-motion";
 
 const Hero = () => {

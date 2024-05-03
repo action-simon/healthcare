@@ -1,8 +1,8 @@
-import Image from "next/image";
-
 import * as m from "@/paraglide/messages";
-import dementia_image from "@/public/deniz-altindas-t1XLQvDqt_4-unsplash.jpg";
+
 import Container from "../Container";
+import Image from "next/image";
+import dementia_image from "@/public/deniz-altindas-t1XLQvDqt_4-unsplash.jpg";
 
 const List = () => {
   return (

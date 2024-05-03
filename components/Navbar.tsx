@@ -1,16 +1,9 @@
 "use client";
 
-import { HeartPulseIcon, Menu, MessageCircle } from "lucide-react";
-import { useEffect, useState } from "react";
+import * as m from "@/paraglide/messages";
 
 import { Button, buttonVariants } from "@/components/ui/button";
-import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuList,
-  NavigationMenuLink,
-} from "@/components/ui/navigation-menu";
-import { Separator } from "@/components/ui/separator";
+import { HeartPulseIcon, Menu, MessageCircle } from "lucide-react";
 import {
   Sheet,
   SheetContent,
@@ -18,12 +11,13 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { Link } from "@/lib/i18n";
-import * as m from "@/paraglide/messages";
+import { useEffect, useState } from "react";
 
-import { LanguageSwitcher } from "./LanguageSwitcher";
-import { ModeToggle } from "./ModeToggle";
 import Container from "./Container";
+import { LanguageSwitcher } from "./LanguageSwitcher";
+import { Link } from "@/lib/i18n";
+import { ModeToggle } from "./ModeToggle";
+import { Separator } from "@/components/ui/separator";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,66 +41,9 @@ export const Navbar = () => {
           <HeartPulseIcon className="mr-2" />
           {m.home_metadata_title()}
         </Link>
-
-        <nav className="hidden flex-row justify-between gap-x-2 lg:flex">
-          <Link
-            href={m.concepthref()}
-            onClick={() => setIsOpen(false)}
-            className={`text-lg ${buttonVariants({ variant: "ghost" })}`}
-          >
-            {m.Concept()}
-          </Link>
-          <Link
-            href={m.keyinformationhref()}
-            onClick={() => setIsOpen(false)}
-            className={`text-lg ${buttonVariants({ variant: "ghost" })}`}
-          >
-            {m.Key_information()}
-          </Link>
-          <Link
-            href={m.participantshref()}
-            onClick={() => setIsOpen(false)}
-            className={`text-lg ${buttonVariants({ variant: "ghost" })}`}
-          >
-            {m.Participants()}
-          </Link>
-          <Link
-            href={m.partnershref()}
-            onClick={() => setIsOpen(false)}
-            className={`text-lg ${buttonVariants({ variant: "ghost" })}`}
-          >
-            {m.Partners()}
-          </Link>
-          <Link
-            href={m.galleryhref()}
-            onClick={() => setIsOpen(false)}
-            className={`text-lg ${buttonVariants({ variant: "ghost" })}`}
-          >
-            {m.Gallery()}
-          </Link>
-        </nav>
-
-        <div className="hidden gap-x-2 lg:flex">
-          <Link href="/contact">
-            <Button variant={"secondary"} className="border border-secondary">
-              <MessageCircle className="mr-2 h-5 w-5" />
-              {m.Contact_us()}
-            </Button>
-          </Link>
-          <ModeToggle />
-
-          <LanguageSwitcher />
-        </div>
-
         <nav className="flex gap-x-4 lg:hidden">
-          <Link href="/contact">
-            <Button variant={"secondary"} className="border border-secondary">
-              <MessageCircle className="mr-2 h-5 w-5" />
-              {m.Contact_us()}
-            </Button>
-          </Link>
-          <LanguageSwitcher />
           <ModeToggle />
+          <LanguageSwitcher />
 
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger className="px-2">
@@ -120,9 +57,11 @@ export const Navbar = () => {
 
             <SheetContent side={"left"}>
               <SheetHeader>
-                <SheetTitle className="text-xl font-bold">Medical</SheetTitle>
+                <SheetTitle className=" text-lg font-bold">
+                  {m.home_metadata_title()}
+                </SheetTitle>
               </SheetHeader>
-              <nav className="mt-4 flex flex-col items-center justify-center gap-2">
+              <nav className="mt-8 flex flex-col items-center justify-center gap-4">
                 <Link
                   href={m.concepthref()}
                   onClick={() => setIsOpen(false)}
@@ -176,6 +115,56 @@ export const Navbar = () => {
             </SheetContent>
           </Sheet>
         </nav>
+
+        <nav className="hidden flex-row justify-between gap-x-2 lg:flex">
+          <Link
+            href={m.concepthref()}
+            onClick={() => setIsOpen(false)}
+            className={`text-lg ${buttonVariants({ variant: "ghost" })}`}
+          >
+            {m.Concept()}
+          </Link>
+          <Link
+            href={m.keyinformationhref()}
+            onClick={() => setIsOpen(false)}
+            className={`text-lg ${buttonVariants({ variant: "ghost" })}`}
+          >
+            {m.Key_information()}
+          </Link>
+          <Link
+            href={m.participantshref()}
+            onClick={() => setIsOpen(false)}
+            className={`text-lg ${buttonVariants({ variant: "ghost" })}`}
+          >
+            {m.Participants()}
+          </Link>
+          <Link
+            href={m.partnershref()}
+            onClick={() => setIsOpen(false)}
+            className={`text-lg ${buttonVariants({ variant: "ghost" })}`}
+          >
+            {m.Partners()}
+          </Link>
+          <Link
+            href={m.galleryhref()}
+            onClick={() => setIsOpen(false)}
+            className={`text-lg ${buttonVariants({ variant: "ghost" })}`}
+          >
+            {m.Gallery()}
+          </Link>
+        </nav>
+
+        <div className="hidden gap-x-2 lg:flex">
+          <Link href="/contact">
+            <Button variant={"secondary"} className="border border-secondary">
+              <MessageCircle className="mr-2 h-5 w-5" />
+              {m.Contact_us()}
+            </Button>
+          </Link>
+          <ModeToggle />
+
+          <LanguageSwitcher />
+        </div>
       </Container>
     </header>
   );
