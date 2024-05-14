@@ -1,5 +1,7 @@
 "use client";
 
+import * as m from "@/paraglide/messages";
+
 import { motion, useAnimation } from "framer-motion";
 
 import Container from "../Container";
@@ -36,7 +38,7 @@ const MoreText2 = () => {
           transition={{ duration: 0.5, ease: "easeInOut" }}
           className="break-normal text-3xl font-bold md:text-5xl"
         >
-          Dementia
+          {m.Dementia()}
         </motion.h2>
       </div>
 
@@ -66,11 +68,7 @@ const MoreText2 = () => {
                 hidden: { opacity: 0, y: 20 },
               }}
             >
-              Dementia is an umbrella term for over 50 diseases, of which
-              Alzheimer's disease is the best known. In the Netherlands, 1 in 5
-              people develop dementia. At ZonMw, we want to use knowledge and
-              innovation to improve the quality of life for people with dementia
-              and their loved ones.
+              {m.moretext2_1()}
             </motion.p>
             <motion.h3
               className="pt-5 text-2xl font-bold"
@@ -79,7 +77,7 @@ const MoreText2 = () => {
                 hidden: { opacity: 0, y: 20 },
               }}
             >
-              Types of dementia
+              {m.moretext2_2()}
             </motion.h3>
             <motion.p
               variants={{
@@ -88,11 +86,7 @@ const MoreText2 = () => {
               }}
               className="py-6"
             >
-              The most common types of dementia are Alzheimer's disease,
-              vascular dementia, frontotemporal dementia and Lewy body dementia.
-              In the diseases, nerve cells in the brain are damaged, causing
-              them to malfunction and reduce their ability to process
-              information. This affects memory, body and mental health.
+              {m.moretext2_3()}
             </motion.p>
 
             <motion.h3
@@ -102,7 +96,7 @@ const MoreText2 = () => {
                 hidden: { opacity: 0, y: 20 },
               }}
             >
-              How does dementia occur?
+              {m.moretext2_4()}
             </motion.h3>
             <motion.p
               variants={{
@@ -111,14 +105,7 @@ const MoreText2 = () => {
               }}
               className="py-6"
             >
-              Much is unknown about the processes that lead to dementia. There
-              is also often no 1 cause that can be identified. We therefore fund
-              research into the origin and mechanism of dementia. This includes
-              further identifying and understanding how genes, nerve cells,
-              glial cells and proteins work. Unravelling the mechanisms may also
-              ultimately help treat, diagnose or prevent dementia. We fund the
-              MODEM consortium that brings together parties to better understand
-              the origins of dementia.
+              {m.moretext2_5()}
             </motion.p>
             <motion.h3
               variants={{
@@ -127,7 +114,7 @@ const MoreText2 = () => {
               }}
               className="pt-5 text-2xl font-bold"
             >
-              Better care, support and activities for people with dementia
+              {m.moretext2_6()}
             </motion.h3>
             <motion.p
               variants={{
@@ -136,12 +123,7 @@ const MoreText2 = () => {
               }}
               className="py-6"
             >
-              It is important that people with dementia and their loved ones can
-              participate in our society and have a good quality of life. With
-              the right care, support and activities, they stay active, healthy
-              and socially engaged for longer by staying in touch with others.
-              We focus on care and support for people with dementia, through our
-              research programmes from the medical and social domain.
+              {m.moretext2_7()}
             </motion.p>
 
             <motion.p
@@ -151,14 +133,7 @@ const MoreText2 = () => {
               }}
               className="py-6"
             >
-              When a person is diagnosed with dementia, the palliative phase
-              begins. This phase lasts between six and eight years on average.
-              In order to know what the wishes and needs of a person with
-              dementia are, it is important to have a timely conversation about
-              this so that it can be recorded in good time. The estimated last
-              three months of life in the palliative phase is called the
-              terminal phase. Good cooperation between professionals involved is
-              important to make the last phase of life as smooth as possible.
+              {m.moretext2_8()}
             </motion.p>
 
             <motion.p
@@ -168,11 +143,7 @@ const MoreText2 = () => {
               }}
               className="py-6"
             >
-              Palliative care is an approach that improves the quality of life
-              of patients and their loved ones dealing with a life-threatening
-              condition by preventing and relieving suffering, through early
-              detection and careful assessment and treatment of pain and other
-              problems of a physical, psychosocial and spiritual nature.
+              {m.moretext2_9()}
             </motion.p>
             <motion.p
               variants={{
@@ -181,9 +152,7 @@ const MoreText2 = () => {
               }}
               className="py-6"
             >
-              When the palliative phase starts, it is important to discuss
-              wishes and needs about the last phase of life in a timely manner
-              (advance care planning).
+              {m.moretext2_10()}
             </motion.p>
 
             <motion.h3
@@ -193,7 +162,7 @@ const MoreText2 = () => {
               }}
               className="pt-5 text-2xl font-bold"
             >
-              On time in conversation
+              {m.moretext2_11()}
             </motion.h3>
             <motion.p
               variants={{
@@ -202,12 +171,7 @@ const MoreText2 = () => {
               }}
               className="py-6"
             >
-              Due to the long period of palliative care, most healthcare
-              professionals find it difficult to start right away. Yet it is
-              important as a professional to start the conversation about this
-              in time. This is advance care planning, where you identify the
-              wishes and needs of a person with dementia so that you can provide
-              better care.
+              {m.moretext2_12()}
             </motion.p>
             <motion.h3
               variants={{
@@ -216,7 +180,7 @@ const MoreText2 = () => {
               }}
               className="pt-5 text-2xl font-bold"
             >
-              Wishes and needs
+              {m.moretext2_13()}
             </motion.h3>
             <motion.p
               variants={{
@@ -225,13 +189,7 @@ const MoreText2 = () => {
               }}
               className="py-6"
             >
-              Advance care planning is important in persons with dementia. When
-              a person with dementia is in an advanced stage, they can no longer
-              always articulate their wishes and needs. By starting the
-              conversation early in the dementia process, people are even better
-              able to express what they would like around the end of life. It
-              also ensures that in acute situations what can be done is already
-              decided, making the GP's job easier.
+              {m.moretext2_14()}
             </motion.p>
             <motion.p
               variants={{
@@ -240,10 +198,7 @@ const MoreText2 = () => {
               }}
               className="py-6"
             >
-              An important part in palliative care is communication with the
-              client. For palliative care, there are a number of topics you
-              should pay attention to. With these, you can contribute to the
-              client's quality of life.
+              {m.moretext2_15()}
             </motion.p>
             <motion.p
               variants={{
@@ -252,16 +207,7 @@ const MoreText2 = () => {
               }}
               className="py-6"
             >
-              Communication in palliative care is vital because it helps to
-              understand and respect the needs, wishes and concerns of patients
-              and their families. Effective communication enables healthcare
-              providers to put the patient at the centre of the care process,
-              support them in making decisions, manage their pain and symptoms
-              and improve their quality of life. It also helps build trust and
-              provide emotional support to the patient and their loved ones
-              during this difficult period. In short, good communication
-              contributes to a better palliative care experience for all
-              involved.
+              {m.moretext2_16()}
             </motion.p>
           </motion.div>
         </div>

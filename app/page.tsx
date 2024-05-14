@@ -1,4 +1,5 @@
 import Conversation from "@/components/home/Conversation";
+import Cta from "@/components/home/Cta";
 import Gallery from "@/components/home/Gallery";
 import Health from "@/components/home/Health";
 import Hero from "@/components/home/Hero";
@@ -13,8 +14,11 @@ export default function Home() {
     <>
       <Hero />
       <MoreText />
-      <Gallery />
+      <Cta />
       <Health />
+
+      {/* <Gallery /> */}
+
       <MoreText2 />
       <KeyInformation />
       <Info />

@@ -1,5 +1,7 @@
 "use client";
 
+import * as m from "@/paraglide/messages";
+
 import { motion, useAnimation } from "framer-motion";
 
 import Container from "../Container";
@@ -36,7 +38,7 @@ const MoreText2 = () => {
           transition={{ duration: 0.5, ease: "easeInOut" }}
           className="break-normal text-3xl font-bold md:text-5xl"
         >
-          Palliative care
+          {m.Palliative_care()}
         </motion.h2>
       </div>
 
@@ -66,10 +68,7 @@ const MoreText2 = () => {
                 hidden: { opacity: 0, y: 20 },
               }}
             >
-              People who are incurably ill and their loved ones sooner or later
-              encounter care in the last phase of their lives. Good palliative
-              care is needed to give them the highest possible quality of life
-              and to prevent and relieve suffering.
+              {m.more_text_1()}
             </motion.p>
             <motion.h3
               className="pt-5 text-2xl font-bold"
@@ -78,7 +77,7 @@ const MoreText2 = () => {
                 hidden: { opacity: 0, y: 20 },
               }}
             >
-              Right care at the right time
+              {m.more_text_2()}
             </motion.h3>
             <motion.p
               variants={{
@@ -87,17 +86,7 @@ const MoreText2 = () => {
               }}
               className="py-6"
             >
-              The World Health Organisation (WHO) predicts that the number of
-              people dying annually worldwide will rise from 51 million in 2015
-              to 70 million in 2030. Due to improved diagnostics and treatment,
-              people are living longer. People continue to live at home for
-              longer and attention is being paid to the values, wishes and needs
-              of patients and their loved ones. Their values, wishes and needs
-              is what good palliative care is all about. We believe it is
-              important that every citizen is assured of palliative care in the
-              right place, at the right time and by the right healthcare
-              providers. That is why we invest in optimising palliative care in
-              physical, psychological, social and spiritual areas.
+              {m.more_text_3()}
             </motion.p>
             <motion.h3
               className="pt-5 text-2xl font-bold"
@@ -106,7 +95,7 @@ const MoreText2 = () => {
                 hidden: { opacity: 0, y: 20 },
               }}
             >
-              What is palliative care?
+              {m.more_text_4()}
             </motion.h3>
             <motion.p
               variants={{
@@ -115,15 +104,7 @@ const MoreText2 = () => {
               }}
               className="py-6"
             >
-              Palliative care is care for patients and their loved ones dealing
-              with a life-threatening condition or frailty. This care improves
-              the quality of life by preventing and relieving suffering. Having
-              an eye for problems of a physical, psychological, social and
-              spiritual nature is central. Early detection and careful
-              assessment and treatment of those problems is essential. More
-              information can be found in the Quality Framework for Palliative
-              Care Netherlands, which forms the basis for the organisation of
-              palliative care in the Netherlands.
+              {m.more_text_5()}
             </motion.p>
             <motion.h3
               variants={{
@@ -132,7 +113,7 @@ const MoreText2 = () => {
               }}
               className="pt-5 text-2xl font-bold"
             >
-              Healthcare innovations and quality
+              {m.more_text_6()}
             </motion.h3>
             <motion.p
               variants={{
@@ -141,11 +122,7 @@ const MoreText2 = () => {
               }}
               className="py-6"
             >
-              We focus on underpinning existing interventions around symptom
-              management, driving the implementation of promising interventions
-              and encouraging quality improvement through learning and
-              improvement in practice. Read more about quality indicators and
-              learning and improvement.
+              {m.more_text_7()}
             </motion.p>
             <motion.h3
               variants={{
@@ -154,7 +131,7 @@ const MoreText2 = () => {
               }}
               className="pt-5 text-2xl font-bold"
             >
-              Organisation and continuity of care
+              {m.more_text_8()}
             </motion.h3>
             <motion.p
               variants={{
@@ -163,12 +140,7 @@ const MoreText2 = () => {
               }}
               className="py-6"
             >
-              We are committed to good cooperation and information transfer
-              between parties involved in the care and support of patients in
-              the palliative phase and their relatives. This mainly concerns
-              transmural cooperation in 1st and 2nd line care, the connection
-              with the social domain, the individual care plan and digital data
-              exchange. Read more about cooperation and transfer.
+              {m.more_text_9()}
             </motion.p>
             <motion.h3
               variants={{
@@ -177,7 +149,7 @@ const MoreText2 = () => {
               }}
               className="pt-5 text-2xl font-bold"
             >
-              Participation and support
+              {m.more_text_10()}
             </motion.h3>
             <motion.p
               variants={{
@@ -186,10 +158,7 @@ const MoreText2 = () => {
               }}
               className="py-6"
             >
-              There is a focus on supporting the patient, informal carer and
-              carer. We also encourage research on how to support both in cases
-              of overload, moral dilemmas and other issues. Read more about
-              support care network.
+              {m.more_text_11()}
             </motion.p>
           </motion.div>
         </div>
