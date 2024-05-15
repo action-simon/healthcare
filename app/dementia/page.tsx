@@ -5,7 +5,7 @@ import * as m from "@/paraglide/messages";
 import { motion, useAnimation } from "framer-motion";
 
 import Container from "@/components/Container";
-import tulips from "@/public/michael-denning-o1JbX7qxAl4-unsplash.jpg";
+import dementia from "@/public/astrid-schaffner-UcMQ55m8R1c-unsplash.jpg";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
@@ -44,7 +44,7 @@ const MoreText2 = () => {
 
       <div
         className=" mx-auto mt-8 h-[60vh] w-full max-w-6xl rounded bg-background bg-cover"
-        style={{ backgroundImage: `url(${tulips.src})` }}
+        style={{ backgroundImage: `url(${dementia.src})` }}
       ></div>
 
       <div className=" mx-auto -mt-32 max-w-5xl ">
