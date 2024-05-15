@@ -24,7 +24,7 @@ const MoreText2 = () => {
 
   return (
     <Container>
-      <div className="pt-16 text-center md:pt-32">
+      <div className="pt-16 text-center">
         <p className="text-sm font-bold text-primary md:text-base">
           HEALTHCARE MEETINGS
         </p>

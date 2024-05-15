@@ -67,14 +67,14 @@ export const Navbar = () => {
                   onClick={() => setIsOpen(false)}
                   className={buttonVariants({ variant: "ghost" })}
                 >
-                  Palliative care
+                  {m.Palliative_care()}
                 </Link>
                 <Link
                   href="/dementia"
                   onClick={() => setIsOpen(false)}
                   className={buttonVariants({ variant: "ghost" })}
                 >
-                  Dementia
+                  {m.Dementia()}
                 </Link>
                 <Link
                   href={m.participantshref()}
@@ -121,14 +121,14 @@ export const Navbar = () => {
             href="/palliative-care"
             className={`text-lg ${buttonVariants({ variant: "ghost" })}`}
           >
-            Palliative care
+            {m.Palliative_care()}
           </Link>
           <Link
             href="/dementia"
             onClick={() => setIsOpen(false)}
             className={`text-lg ${buttonVariants({ variant: "ghost" })}`}
           >
-            Dementia
+            {m.Dementia()}
           </Link>
           <Link
             href={m.participantshref()}
