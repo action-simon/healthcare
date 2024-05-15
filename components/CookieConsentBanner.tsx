@@ -1,5 +1,7 @@
 "use client";
 
+import * as m from "@/paraglide/messages";
+
 import { useEffect, useState } from "react";
 
 import { Button } from "./ui/button";
@@ -35,18 +37,16 @@ const CookieConsentBanner = () => {
   return (
     <div className="sticky bottom-0 left-0 z-50 border-t bg-background">
       <Container className="flex items-center justify-between py-4">
-        <p className="mr-4 text-xs">
-          We use our own cookies as well as third-party cookies on our websites
-          to enhance your experience, analyze our traffic, and for security and
-          marketing. Select "Accept All" to allow them to be used. Read our
-          <Link href="privacy-policy">Cookie Policy</Link>.
-        </p>
+        <p
+          className="mr-4 text-xs"
+          dangerouslySetInnerHTML={{ __html: m.cookie_text() }}
+        />
         <div className="flex items-center justify-between gap-x-2">
           <Button size={"sm"} variant={"outline"} onClick={handleAccept}>
-            Block all cookies
+            {m.Block_all_cookies()}
           </Button>
           <Button size={"sm"} onClick={handleReject}>
-            Accept all
+            {m.Accept_all()}
           </Button>
         </div>
       </Container>
