@@ -2,6 +2,7 @@ import "./globals.css";
 
 import * as m from "@/paraglide/messages.js";
 
+import CookieConsentBanner from "@/components/CookieConsentBanner";
 import { Footer } from "@/components/Footer";
 import { Inter } from "next/font/google";
 import { LanguageProvider } from "@inlang/paraglide-next";
@@ -42,6 +43,7 @@ export default function RootLayout({
             <ScrollToTop />
             <Toaster />
             <Footer />
+            <CookieConsentBanner />
           </ThemeProvider>
         </body>
       </html>
