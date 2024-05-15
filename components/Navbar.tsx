@@ -63,18 +63,18 @@ export const Navbar = () => {
               </SheetHeader>
               <nav className="mt-8 flex flex-col items-center justify-center gap-4">
                 <Link
-                  href={m.concepthref()}
+                  href="/palliative-care"
                   onClick={() => setIsOpen(false)}
                   className={buttonVariants({ variant: "ghost" })}
                 >
-                  {m.Concept()}
+                  Palliative care
                 </Link>
                 <Link
-                  href={m.keyinformationhref()}
+                  href="/dementia"
                   onClick={() => setIsOpen(false)}
                   className={buttonVariants({ variant: "ghost" })}
                 >
-                  {m.Key_information()}
+                  Dementia
                 </Link>
                 <Link
                   href={m.participantshref()}
@@ -118,36 +118,32 @@ export const Navbar = () => {
 
         <nav className="hidden flex-row justify-between gap-x-2 lg:flex">
           <Link
-            href={m.concepthref()}
-            onClick={() => setIsOpen(false)}
+            href="/palliative-care"
             className={`text-lg ${buttonVariants({ variant: "ghost" })}`}
           >
-            {m.Concept()}
+            Palliative care
           </Link>
           <Link
-            href={m.keyinformationhref()}
+            href="/dementia"
             onClick={() => setIsOpen(false)}
             className={`text-lg ${buttonVariants({ variant: "ghost" })}`}
           >
-            {m.Key_information()}
+            Dementia
           </Link>
           <Link
             href={m.participantshref()}
-            onClick={() => setIsOpen(false)}
             className={`text-lg ${buttonVariants({ variant: "ghost" })}`}
           >
             {m.Participants()}
           </Link>
           <Link
             href={m.partnershref()}
-            onClick={() => setIsOpen(false)}
             className={`text-lg ${buttonVariants({ variant: "ghost" })}`}
           >
             {m.Partners()}
           </Link>
           <Link
             href={m.galleryhref()}
-            onClick={() => setIsOpen(false)}
             className={`text-lg ${buttonVariants({ variant: "ghost" })}`}
           >
             {m.Gallery()}
