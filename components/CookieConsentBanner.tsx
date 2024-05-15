@@ -42,10 +42,10 @@ const CookieConsentBanner = () => {
           dangerouslySetInnerHTML={{ __html: m.cookie_text() }}
         />
         <div className="flex items-center justify-between gap-x-2">
-          <Button size={"sm"} variant={"outline"} onClick={handleAccept}>
+          <Button size={"sm"} variant={"outline"} onClick={handleReject}>
             {m.Block_all_cookies()}
           </Button>
-          <Button size={"sm"} onClick={handleReject}>
+          <Button size={"sm"} onClick={handleAccept}>
             {m.Accept_all()}
           </Button>
         </div>
