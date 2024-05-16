@@ -13,8 +13,8 @@ export default function Home() {
       <Hero />
       <Cta />
       <Health />
-      <KeyInformation />
       <Saxion />
+      <KeyInformation />
       <Info />
       <List />
       <Conversation />
