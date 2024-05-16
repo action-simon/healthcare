@@ -144,5 +144,16 @@
   "pp1": "1. Datenschutz auf einen Blick",
   "privacy_1": "1. Data protection at a glance",
   "privacy_2": "General information",
-  "privacy_3": "The following information provides a simple overview of what happens to your personal data when you visit this website. Personal data is all data with which you can be personally identified. You can find detailed information on the subject of data protection in our data protection declaration listed under this text."
+  "privacy_3": "The following information provides a simple overview of what happens to your personal data when you visit this website. Personal data is all data with which you can be personally identified. You can find detailed information on the subject of data protection in our data protection declaration listed under this text.",
+  "privacy_4": "Data collection on this website",
+  "privacy_5": "Who is responsible for data collection on this website?",
+  "privacy_6": "The data processing on this website is carried out by the website operator. You can find his contact details in the section \"Information on the responsible party\" in this data protection declaration.",
+  "privacy_7": "How do we collect your data?",
+  "privacy_8": "On the one hand, your data is collected when you communicate it to us. This may, for example, be data that you enter in a contact form.",
+  "privacy_9": "Other data is collected automatically or with your consent when you visit the website by our IT systems. This is primarily technical data (e.g. Internet browser, operating system or time of page access). This data is collected automatically as soon as you enter this website.",
+  "privacy_10": "What do we use your data for?",
+  "privacy_11": "Some of the data is collected to ensure that the website is provided without errors. Other data can be used to analyze your user behavior.",
+  "privacy_12": "What rights do you have regarding your data?",
+  "privacy_13": "You have the right to obtain information about the origin, recipient and purpose of your stored personal data free of charge at any time. You also have the right to request that this data be corrected or deleted. If you have given your consent to data processing, you can revoke this consent at any time for the future. You also have the right to request that the processing of your personal data be restricted under certain circumstances. You also have the right to lodge a complaint with the responsible supervisory authority.",
+  "privacy_14": "You can contact us at any time with any questions about this or other issues relating to data protection."
 }
