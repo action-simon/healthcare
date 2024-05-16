@@ -77,11 +77,11 @@ export const Navbar = () => {
                   {m.Dementia()}
                 </Link>
                 <Link
-                  href={m.participantshref()}
+                  href="/#about"
                   onClick={() => setIsOpen(false)}
                   className={buttonVariants({ variant: "ghost" })}
                 >
-                  {m.Participants()}
+                  Über uns
                 </Link>
                 <Link
                   href={m.partnershref()}
@@ -131,10 +131,10 @@ export const Navbar = () => {
             {m.Dementia()}
           </Link>
           <Link
-            href={m.participantshref()}
+            href="/#about"
             className={`text-lg ${buttonVariants({ variant: "ghost" })}`}
           >
-            {m.Participants()}
+            Über uns
           </Link>
           <Link
             href={m.partnershref()}

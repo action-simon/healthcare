@@ -6,7 +6,7 @@ import hands_image from "@/public/shane-rounce-DNkoNXQti3c-unsplash.jpg";
 
 const KeyInformation = () => {
   return (
-    <section>
+    <section id="about">
       <Container>
         <div className=" mx-auto max-w-7xl  ">
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">

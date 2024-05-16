@@ -9,10 +9,8 @@ import dementia from "@/public/astrid-schaffner-UcMQ55m8R1c-unsplash.jpg";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
-const MoreText2 = () => {
-  const { ref, inView } = useInView({
-    threshold: 0.1,
-  });
+const DementiaPage = () => {
+  const { ref, inView } = useInView();
 
   const controls = useAnimation();
 
@@ -22,24 +20,19 @@ const MoreText2 = () => {
     }
   }, [controls, inView]);
 
+  useEffect(() => {
+    controls.start("visible");
+  }, [controls]);
+
   return (
     <Container>
       <div className="pt-16 text-center">
         <p className="text-sm font-bold uppercase text-primary md:text-base">
           Healthcare meetings
         </p>
-        <motion.h2
-          initial="hidden"
-          animate={controls}
-          variants={{
-            visible: { opacity: 1, y: 0 },
-            hidden: { opacity: 0, y: 20 },
-          }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
-          className="break-normal text-3xl font-bold md:text-5xl"
-        >
+        <h2 className="break-normal text-3xl font-bold md:text-5xl">
           {m.Dementia()}
-        </motion.h2>
+        </h2>
       </div>
 
       <div
@@ -59,7 +52,11 @@ const MoreText2 = () => {
               visible: { opacity: 1, y: 0 },
               hidden: { opacity: 0, y: 20 },
             }}
-            transition={{ duration: 0.5, staggerChildren: 0.4 }}
+            transition={{
+              duration: 0.5,
+              staggerChildren: 0.3,
+              ease: "easeIn",
+            }}
           >
             <motion.p
               className="mb-5 text-2xl text-foreground md:text-3xl"
@@ -216,4 +213,4 @@ const MoreText2 = () => {
   );
 };
 
-export default MoreText2;
+export default DementiaPage;
