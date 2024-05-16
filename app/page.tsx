@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Countdown />
       <Cta />
+      <Countdown />
       <Saxion />
       <KeyInformation />
       <Info />
