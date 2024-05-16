@@ -18,7 +18,7 @@ export const strategy = PrefixStrategy<AvailableLanguageTag>({
     "/privacy-policy": {
       en: "/privacy-policy",
       de: "/datenschutz",
-      nl: "/bescherming-van-gegevens",
+      nl: "/gegevensbescherming",
     },
     "/contact": {
       en: "/contact",
