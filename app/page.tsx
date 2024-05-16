@@ -5,6 +5,7 @@ import Hero from "@/components/home/Hero";
 import Info from "@/components/home/Info";
 import KeyInformation from "@/components/home/KeyInformation";
 import List from "@/components/home/List";
+import Saxion from "@/components/home/Saxion";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Cta />
       <Health />
       <KeyInformation />
+      <Saxion />
       <Info />
       <List />
       <Conversation />
