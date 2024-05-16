@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import Container from "../Container";
 import Image from "next/image";
 import { Link } from "@/lib/i18n";
-import hero_image from "@/public/hero-img.png";
+import hero_image from "@/public/robina-weermeijer-igwG8aIaypo-unsplash.png";
 import { motion } from "framer-motion";
 
 const Hero = () => {
