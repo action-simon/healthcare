@@ -1,9 +1,7 @@
 import * as m from "@/paraglide/messages";
 
-import { Button } from "../ui/button";
 import Container from "../Container";
 import Image from "next/image";
-import { Link } from "@/lib/i18n";
 import SaxionLogo from "@/public/saxionLogo.jpeg";
 
 const Saxion = () => {
@@ -12,17 +10,15 @@ const Saxion = () => {
       <Container>
         <div className=" lg:flex lg:items-center">
           <div className="mr-6 w-full">
-            <h2 className="text-3xl font-extrabold sm:text-4xl">Saxion</h2>
+            <h2 className="text-3xl font-extrabold sm:text-4xl">
+              Saxion University of Applied Science
+            </h2>
             <p className="text-md mt-4 text-muted-foreground">
-              Powered by Saxion
+              In zusammenarbeit mit der Saxion University of Applied Science,
+              haben wir ein Projekt entwickelt, um Patienten und medizinischem
+              Personal die Möglichkeit zu geben, die Qualität der Pflege zu
+              verbessern.
             </p>
-            <div className="lg:mt-0 lg:flex-shrink-0">
-              <div className="mt-6 inline-flex ">
-                <Link href="/contact">
-                  <Button>{m.Contact_us()}</Button>
-                </Link>
-              </div>
-            </div>
           </div>
           <div className="flex items-center gap-6 py-8 lg:w-10/12 lg:py-24">
             <Image
