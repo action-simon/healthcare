@@ -226,5 +226,18 @@
   "privacy_79": "After you unsubscribe from the newsletter distribution list, your email address may be stored in a blacklist by us or the newsletter service provider if this is necessary to prevent future mailings. The data from the blacklist is only used for this purpose and is not merged with other data. This serves both your interest and our interest in complying with the legal requirements when sending newsletters (legitimate interest within the meaning of Art. 6 Para. 1 lit. f GDPR). Storage in the blacklist is not time-limited.",
   "privacy_80": " You can object to the storage if your interests outweigh our legitimate interests.",
   "Saxion_University_of_Applied_Science": "Saxion University of Applied Sciences",
-  "Saxion_Info": "In collaboration with Saxion University of Applied Sciences, we have developed a project to give patients and medical staff the opportunity to improve the quality of care."
+  "Saxion_Info": "In collaboration with Saxion University of Applied Sciences, we have developed a project to give patients and medical staff the opportunity to improve the quality of care.",
+  "About_us": "About Us",
+  "months": "Months",
+  "days": "Days",
+  "hours": "Hours",
+  "minutes": "Minutes",
+  "seconds": "Seconds",
+  "Das_Healthcare_Meetings_Event_hat_schon_stattgefunden": "The Healthcare Meetings event has already taken place!",
+  "Das_Healthcare_Meetings_Event_findet_statt_in": "The Healthcare Meetings event will take place in:",
+  "second": "Second",
+  "minute": "Minute",
+  "hour": "Hour",
+  "day": "Day",
+  "month": "Month"
 }

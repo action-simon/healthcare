@@ -81,7 +81,8 @@ export const Navbar = () => {
                   onClick={() => setIsOpen(false)}
                   className={buttonVariants({ variant: "ghost" })}
                 >
-                  Über uns
+                  
+                  {m.About_us()}
                 </Link>
                 <Link
                   href={m.partnershref()}
@@ -134,7 +135,7 @@ export const Navbar = () => {
             href="/#about"
             className={`text-lg ${buttonVariants({ variant: "ghost" })}`}
           >
-            Über uns
+            {m.About_us()}
           </Link>
           <Link
             href={m.partnershref()}

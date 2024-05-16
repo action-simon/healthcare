@@ -226,5 +226,18 @@
   "privacy_79": "Nach Ihrer Austragung aus der Newsletterverteilerliste wird Ihre E-Mail-Adresse bei uns bzw. dem Newsletterdiensteanbieter ggf. in einer Blacklist gespeichert, sofern dies zur Verhinderung künftiger Mailings erforderlich ist. Die Daten aus der Blacklist werden nur für diesen Zweck verwendet und nicht mit anderen Daten zusammengeführt. Dies dient sowohl Ihrem Interesse als auch unserem Interesse an der Einhaltung der gesetzlichen Vorgaben beim Versand von Newslettern (berechtigtes Interesse im Sinne des Art. 6 Abs. 1 lit. f DSGVO). Die Speicherung in der Blacklist ist zeitlich nicht befristet.",
   "privacy_80": " Sie können der Speicherung widersprechen, sofern Ihre Interessen unser berechtigtes Interesse überwiegen.",
   "Saxion_University_of_Applied_Science": "Saxion University of Applied Sciences",
-  "Saxion_Info": "In Zusammenarbeit mit der Saxion University of Applied Sciences, haben wir ein Projekt entwickelt, um Patienten und medizinischem Personal die Möglichkeit zu geben, die Qualität der Pflege zu verbessern."
+  "Saxion_Info": "In Zusammenarbeit mit der Saxion University of Applied Sciences, haben wir ein Projekt entwickelt, um Patienten und medizinischem Personal die Möglichkeit zu geben, die Qualität der Pflege zu verbessern.",
+  "About_us": "Über uns",
+  "months": "Monaten",
+  "days": "Tagen",
+  "hours": "Stunden",
+  "minutes": "Minuten",
+  "seconds": "Sekunden",
+  "Das_Healthcare_Meetings_Event_hat_schon_stattgefunden": "Das Healthcare Meetings Event hat schon stattgefunden!",
+  "Das_Healthcare_Meetings_Event_findet_statt_in": "Das Healthcare Meetings Event findet statt in:",
+  "second": "Sekunde",
+  "minute": "Minute",
+  "hour": "Stunde",
+  "day": "Tag",
+  "month": "Monat"
 }
