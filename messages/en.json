@@ -239,5 +239,8 @@
   "minute": "Minute",
   "hour": "Hour",
   "day": "Day",
-  "month": "Month"
+  "month": "Month",
+  "and": "and",
+  "oclock": "Clock",
+  "date": "Date:"
 }

@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <Hero />
       <Cta />
-      <Countdown />
+      <Countdown targetDate={new Date("2024-06-01T23:30:00")} />
       <Saxion />
       <KeyInformation />
       <Info />

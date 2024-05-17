@@ -239,5 +239,8 @@
   "minute": "Minuut",
   "hour": "Uur",
   "day": "Dag",
-  "month": "Maand"
+  "month": "Maand",
+  "and": "en",
+  "oclock": "uur",
+  "date": "Datum:"
 }
