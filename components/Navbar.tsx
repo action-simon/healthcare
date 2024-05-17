@@ -81,23 +81,16 @@ export const Navbar = () => {
                   onClick={() => setIsOpen(false)}
                   className={buttonVariants({ variant: "ghost" })}
                 >
-                  
                   {m.About_us()}
                 </Link>
                 <Link
-                  href={m.partnershref()}
+                  href="/#partners"
                   onClick={() => setIsOpen(false)}
                   className={buttonVariants({ variant: "ghost" })}
                 >
                   {m.Partners()}
                 </Link>
-                <Link
-                  href={m.galleryhref()}
-                  onClick={() => setIsOpen(false)}
-                  className={buttonVariants({ variant: "ghost" })}
-                >
-                  {m.Gallery()}
-                </Link>
+
                 <Link
                   href="/contact"
                   onClick={() => setIsOpen(false)}
@@ -138,16 +131,10 @@ export const Navbar = () => {
             {m.About_us()}
           </Link>
           <Link
-            href={m.partnershref()}
+            href="/#partners"
             className={`text-lg ${buttonVariants({ variant: "ghost" })}`}
           >
             {m.Partners()}
-          </Link>
-          <Link
-            href={m.galleryhref()}
-            className={`text-lg ${buttonVariants({ variant: "ghost" })}`}
-          >
-            {m.Gallery()}
           </Link>
         </nav>
 
