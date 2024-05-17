@@ -7,11 +7,11 @@ import SaxionLogo from "@/public/saxionLogo.jpeg";
 
 const Saxion = () => {
   return (
-    <div className="bg-muted">
+    <div className="bg-muted" id="partners">
       <Container>
         <div className=" lg:flex lg:items-center">
           <div className="flex items-center gap-6 py-8 lg:w-10/12 lg:py-24">
-            <Link href="https://www.saxion.edu/">
+            <Link href="https://www.saxion.edu/" target="_blank">
               <Image
                 src={SaxionLogo}
                 className="object-cover"

@@ -10,7 +10,7 @@ import image3 from "@/public/chungkuk-bae-_0mtPW3Epwo-unsplash.jpg";
 
 const Cta = () => {
   return (
-    <div className="bg-muted" id="partners">
+    <div className="bg-muted">
       <Container>
         <div className=" lg:flex lg:items-center">
           <div className="mr-6 w-full">
