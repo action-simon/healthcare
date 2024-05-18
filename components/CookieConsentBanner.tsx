@@ -6,10 +6,9 @@ import { useEffect, useState } from "react";
 
 import { Button } from "./ui/button";
 import Container from "./Container";
-import { Link } from "@/lib/i18n";
 import cookie from "js-cookie";
 
-const CookieConsentBanner = () => {
+const useCookieConsent = () => {
   const [showBanner, setShowBanner] = useState(false);
 
   useEffect(() => {
@@ -30,18 +29,24 @@ const CookieConsentBanner = () => {
     cookie.set("cookieConsent", "rejected", { expires: 365 });
   };
 
+  return { showBanner, handleAccept, handleReject };
+};
+
+const CookieConsentBanner = () => {
+  const { showBanner, handleAccept, handleReject } = useCookieConsent();
+
   if (!showBanner) {
     return null;
   }
 
   return (
     <div className="sticky bottom-0 left-0 z-50 border-t bg-background">
-      <Container className="flex items-center justify-between py-4">
+      <Container className="items-center justify-between py-4 md:flex">
         <p
-          className="mr-4 text-xs"
+          className="pb-4 text-xs md:mr-4 md:pb-0"
           dangerouslySetInnerHTML={{ __html: m.cookie_text() }}
         />
-        <div className="flex items-center justify-between gap-x-2">
+        <div className="flex items-center justify-center gap-x-2 md:justify-between">
           <Button size={"sm"} variant={"outline"} onClick={handleReject}>
             {m.Block_all_cookies()}
           </Button>

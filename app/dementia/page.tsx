@@ -44,8 +44,8 @@ const DementiaPage = () => {
         <div className="mx-0 sm:mx-6">
           <motion.div
             ref={ref}
-            className="w-full rounded bg-background p-8 font-serif text-xl leading-normal
-              text-foreground md:p-20 md:text-2xl"
+            className="w-full bg-background p-8 font-serif text-xl leading-normal text-foreground
+              md:rounded md:p-20 md:text-2xl"
             initial="hidden"
             animate={controls}
             variants={{
