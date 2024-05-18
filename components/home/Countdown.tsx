@@ -159,11 +159,14 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
       ) : (
         <div>
           {timerReachedZero ? (
-            <div className="mb-3 text-3xl font-semibold text-white">
+            <div className="mb-3 text-2xl font-semibold text-white">
               {m.Das_Healthcare_Meetings_Event_hat_schon_stattgefunden()}
             </div>
           ) : (
-            <div className="flex w-full items-center justify-center text-center text-xl lg:text-6xl">
+            <div
+              className="flex w-full flex-col items-center justify-center space-y-4 text-center text-xl
+                md:flex-row md:space-y-0 lg:text-6xl"
+            >
               {renderTimeUnit(months, m.month(), m.months())}
               {renderTimeUnit(days, m.day(), m.days())}
               {renderTimeUnit(hours, m.hour(), m.hours())}
