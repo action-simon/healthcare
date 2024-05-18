@@ -21,7 +21,7 @@ const Saxion = () => {
               />
             </Link>
           </div>
-          <div className="ml-6 w-full">
+          <div className="lg:ml-6 w-full">
             <h2 className="text-3xl font-extrabold sm:text-4xl">
               {m.Saxion_University_of_Applied_Science()}
             </h2>
