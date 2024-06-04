@@ -36,16 +36,16 @@ const DementiaPage = () => {
       </div>
 
       <div
-        className=" mx-auto mt-8 h-[60vh] w-full max-w-6xl rounded bg-background bg-cover"
+        className="mx-auto mt-8 h-[60vh] w-full max-w-6xl rounded bg-background bg-cover"
         style={{ backgroundImage: `url(${dementia.src})` }}
       ></div>
 
-      <div className=" mx-auto -mt-32 max-w-5xl ">
+      <div className="mx-auto -mt-32 max-w-5xl">
         <div className="mx-0 sm:mx-6">
           <motion.div
             ref={ref}
-            className="w-full bg-background p-8 font-serif text-xl leading-normal text-foreground
-              md:rounded md:p-20 md:text-2xl"
+            className="prose dark:prose-invert w-full bg-background p-8 font-serif text-xl
+              leading-normal text-foreground md:rounded md:p-20 md:text-2xl"
             initial="hidden"
             animate={controls}
             variants={{
@@ -58,17 +58,15 @@ const DementiaPage = () => {
               ease: "easeIn",
             }}
           >
-            <motion.p
-              className="mb-5 text-2xl text-foreground md:text-3xl"
+            <motion.blockquote
               variants={{
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 20 },
               }}
             >
               {m.moretext2_1()}
-            </motion.p>
+            </motion.blockquote>
             <motion.h3
-              className="pt-5 text-2xl font-bold"
               variants={{
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 20 },
@@ -81,13 +79,11 @@ const DementiaPage = () => {
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 20 },
               }}
-              className="py-6"
             >
               {m.moretext2_3()}
             </motion.p>
 
             <motion.h3
-              className="pt-5 text-2xl font-bold"
               variants={{
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 20 },
@@ -100,7 +96,6 @@ const DementiaPage = () => {
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 20 },
               }}
-              className="py-6"
             >
               {m.moretext2_5()}
             </motion.p>
@@ -109,7 +104,6 @@ const DementiaPage = () => {
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 20 },
               }}
-              className="pt-5 text-2xl font-bold"
             >
               {m.moretext2_6()}
             </motion.h3>
@@ -118,7 +112,6 @@ const DementiaPage = () => {
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 20 },
               }}
-              className="py-6"
             >
               {m.moretext2_7()}
             </motion.p>
@@ -128,7 +121,6 @@ const DementiaPage = () => {
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 20 },
               }}
-              className="py-6"
             >
               {m.moretext2_8()}
             </motion.p>
@@ -138,7 +130,6 @@ const DementiaPage = () => {
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 20 },
               }}
-              className="py-6"
             >
               {m.moretext2_9()}
             </motion.p>
@@ -147,7 +138,6 @@ const DementiaPage = () => {
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 20 },
               }}
-              className="py-6"
             >
               {m.moretext2_10()}
             </motion.p>
@@ -157,7 +147,6 @@ const DementiaPage = () => {
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 20 },
               }}
-              className="pt-5 text-2xl font-bold"
             >
               {m.moretext2_11()}
             </motion.h3>
@@ -166,7 +155,6 @@ const DementiaPage = () => {
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 20 },
               }}
-              className="py-6"
             >
               {m.moretext2_12()}
             </motion.p>
@@ -175,7 +163,6 @@ const DementiaPage = () => {
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 20 },
               }}
-              className="pt-5 text-2xl font-bold"
             >
               {m.moretext2_13()}
             </motion.h3>
@@ -184,7 +171,6 @@ const DementiaPage = () => {
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 20 },
               }}
-              className="py-6"
             >
               {m.moretext2_14()}
             </motion.p>
@@ -193,7 +179,6 @@ const DementiaPage = () => {
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 20 },
               }}
-              className="py-6"
             >
               {m.moretext2_15()}
             </motion.p>
@@ -202,7 +187,6 @@ const DementiaPage = () => {
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 20 },
               }}
-              className="py-6"
             >
               {m.moretext2_16()}
             </motion.p>

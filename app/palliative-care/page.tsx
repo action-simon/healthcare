@@ -36,16 +36,16 @@ const PalliativePage = () => {
       </div>
 
       <div
-        className=" mx-auto mt-8 h-[60vh] w-full max-w-6xl rounded bg-background bg-cover"
+        className="mx-auto mt-8 h-[60vh] w-full max-w-6xl rounded bg-background bg-cover"
         style={{ backgroundImage: `url(${palliativecare.src})` }}
       ></div>
 
-      <div className=" mx-auto -mt-32 max-w-5xl ">
+      <div className="mx-auto -mt-32 max-w-5xl">
         <div className="mx-0 sm:mx-6">
           <motion.div
             ref={ref}
-            className="w-full bg-background p-8 font-serif text-xl leading-normal text-foreground
-              md:rounded md:p-20 md:text-2xl"
+            className="prose dark:prose-invert w-full bg-background p-8 font-serif text-xl
+              leading-normal text-foreground md:rounded md:p-20 md:text-2xl"
             initial="hidden"
             animate={controls}
             variants={{
@@ -58,17 +58,15 @@ const PalliativePage = () => {
               ease: "easeIn",
             }}
           >
-            <motion.p
-              className="mb-5 text-2xl text-foreground md:text-3xl"
+            <motion.blockquote
               variants={{
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 20 },
               }}
             >
               {m.more_text_1()}
-            </motion.p>
+            </motion.blockquote>
             <motion.h3
-              className="pt-5 text-2xl font-bold"
               variants={{
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 20 },
@@ -81,12 +79,10 @@ const PalliativePage = () => {
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 20 },
               }}
-              className="py-6"
             >
               {m.more_text_3()}
             </motion.p>
             <motion.h3
-              className="pt-5 text-2xl font-bold"
               variants={{
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 20 },
@@ -99,7 +95,6 @@ const PalliativePage = () => {
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 20 },
               }}
-              className="py-6"
             >
               {m.more_text_5()}
             </motion.p>
@@ -108,7 +103,6 @@ const PalliativePage = () => {
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 20 },
               }}
-              className="pt-5 text-2xl font-bold"
             >
               {m.more_text_6()}
             </motion.h3>
@@ -117,7 +111,6 @@ const PalliativePage = () => {
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 20 },
               }}
-              className="py-6"
             >
               {m.more_text_7()}
             </motion.p>
@@ -126,7 +119,6 @@ const PalliativePage = () => {
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 20 },
               }}
-              className="pt-5 text-2xl font-bold"
             >
               {m.more_text_8()}
             </motion.h3>
@@ -135,7 +127,6 @@ const PalliativePage = () => {
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 20 },
               }}
-              className="py-6"
             >
               {m.more_text_9()}
             </motion.p>
@@ -144,7 +135,6 @@ const PalliativePage = () => {
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 20 },
               }}
-              className="pt-5 text-2xl font-bold"
             >
               {m.more_text_10()}
             </motion.h3>
@@ -153,7 +143,6 @@ const PalliativePage = () => {
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 20 },
               }}
-              className="py-6"
             >
               {m.more_text_11()}
             </motion.p>

@@ -3,7 +3,24 @@
 import * as m from "@/paraglide/messages";
 
 import { Button, buttonVariants } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuTrigger,
+} from "./ui/dropdown-menu";
 import { HeartPulseIcon, Menu, MessageCircle } from "lucide-react";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuIndicator,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuViewport,
+} from "@/components/ui/navigation-menu";
 import {
   Sheet,
   SheetContent,
@@ -57,25 +74,12 @@ export const Navbar = () => {
 
             <SheetContent side={"left"}>
               <SheetHeader>
-                <SheetTitle className=" text-lg font-bold">
+                <SheetTitle className="text-lg font-bold">
                   {m.home_metadata_title()}
                 </SheetTitle>
               </SheetHeader>
               <nav className="mt-8 flex flex-col items-center justify-center gap-4">
-                <Link
-                  href="/palliative-care"
-                  onClick={() => setIsOpen(false)}
-                  className={buttonVariants({ variant: "ghost" })}
-                >
-                  {m.Palliative_care()}
-                </Link>
-                <Link
-                  href="/dementia"
-                  onClick={() => setIsOpen(false)}
-                  className={buttonVariants({ variant: "ghost" })}
-                >
-                  {m.Dementia()}
-                </Link>
+                <Separator className="my-4 w-2/3" />
                 <Link
                   href="/#about"
                   onClick={() => setIsOpen(false)}
@@ -90,6 +94,25 @@ export const Navbar = () => {
                 >
                   {m.Partners()}
                 </Link>
+                <Separator className="my-4 w-2/3" />
+                <h3 className="text-xs font-bold">
+                  {m.Information_for_affected()}
+                </h3>
+                <Link
+                  href="/palliative-care"
+                  onClick={() => setIsOpen(false)}
+                  className={buttonVariants({ variant: "ghost" })}
+                >
+                  {m.Palliative_care()}
+                </Link>
+                <Link
+                  href="/dementia"
+                  onClick={() => setIsOpen(false)}
+                  className={buttonVariants({ variant: "ghost" })}
+                >
+                  {m.Dementia()}
+                </Link>
+                <Separator className="my-4 w-2/3" />
 
                 <Link
                   href="/contact"
@@ -112,24 +135,62 @@ export const Navbar = () => {
 
         <nav className="hidden flex-row justify-between gap-x-2 lg:flex">
           <Link
-            href="/palliative-care"
-            className={`text-lg ${buttonVariants({ variant: "ghost" })}`}
-          >
-            {m.Palliative_care()}
-          </Link>
-          <Link
-            href="/dementia"
-            onClick={() => setIsOpen(false)}
-            className={`text-lg ${buttonVariants({ variant: "ghost" })}`}
-          >
-            {m.Dementia()}
-          </Link>
-          <Link
             href="/#about"
             className={`text-lg ${buttonVariants({ variant: "ghost" })}`}
           >
             {m.About_us()}
           </Link>
+          <NavigationMenu>
+            <NavigationMenuList>
+              <NavigationMenuItem>
+                <NavigationMenuTrigger>
+                  {m.Information_for_affected()}
+                </NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                    <li className="row-span-3">
+                      <NavigationMenuLink asChild>
+                        <a
+                          className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b
+                            from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                          href="/"
+                        >
+                          <div className="mb-2 mt-4 text-lg font-medium">
+                            <Link
+                              href="/"
+                              className="flex items-center justify-center text-xs font-bold text-primary"
+                            >
+                              <HeartPulseIcon className="mr-2" />
+                              {m.home_metadata_title()}
+                            </Link>
+                          </div>
+                        </a>
+                      </NavigationMenuLink>
+                    </li>
+                    <li>
+                      <Link
+                        href="/palliative-care"
+                        title={m.Palliative_care()}
+                        className="block px-4 py-2 text-sm hover:bg-gray-50 dark:hover:bg-neutral-800"
+                      >
+                        {m.Palliative_care()}
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/dementia"
+                        title={m.Dementia()}
+                        className="block px-4 py-2 text-sm hover:bg-gray-50 dark:hover:bg-neutral-800"
+                      >
+                        {m.Dementia()}
+                      </Link>
+                    </li>
+                  </ul>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
+
           <Link
             href="/#partners"
             className={`text-lg ${buttonVariants({ variant: "ghost" })}`}
