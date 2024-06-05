@@ -5,7 +5,7 @@ import * as m from "@/paraglide/messages";
 import { motion, useAnimation } from "framer-motion";
 
 import Container from "@/components/Container";
-import palliativecare from "@/public/robina-weermeijer-igwG8aIaypo-unsplash.jpg";
+import palliativecare from "@/public/alisa-anton-u_z0X-yrJIE-unsplash.jpg";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
