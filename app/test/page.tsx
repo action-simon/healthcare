@@ -92,4 +92,4 @@ const TestPage = () => {
   );
 };
 
-export default PalliativePage;
+export default TestPage;
